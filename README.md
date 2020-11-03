@@ -17,3 +17,13 @@ Creating an Ethereum testnet with a Proof-of-Authortiy (POA) Consensus Algorithm
 7. Once completed, select manage existing genesis and export genesis configurations.
 9. The terminal will look similar to this at the end of this stage: ![alt text](puppeth-config.png)
 
+
+## Setting Up the Nodes for Mining
+1. Initializing the first node for mining in your Terminal: ./geth --datadir node1 --unlock "**Node 1 address here**" --mine --rpc --allow-insecure-unlock
+2. Find and copy the enode address generated in the first step and copy it to your notes for the initialization of Node 2.
+3. Initializing the second node for mining in your Terminal(second terminal window): ./geth --datadir node2 --unlock "**Node 2 address here**" --mine --port 30304 --bootnodes "enode://**node 1 endode address here**" --ipcdisable --allow-insecure-unlock
+4. Once mining, the two terminal windows should look something like the following: ![alt text](mining-away.png)
+
+
+
+
