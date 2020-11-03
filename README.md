@@ -16,3 +16,4 @@ Creating an Ethereum testnet with a Proof-of-Authortiy (POA) Consensus Algorithm
 6. Complete remaining promts as desired
 7. Once completed, select manage existing genesis and export genesis configurations.
 9. The terminal will look similar to this at the end of this stage: ![alt text](puppeth-config.png)
+
