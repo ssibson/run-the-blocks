@@ -24,6 +24,13 @@ Creating an Ethereum testnet with a Proof-of-Authortiy (POA) Consensus Algorithm
 3. Initializing the second node for mining in your Terminal(second terminal window): ./geth --datadir node2 --unlock "**Node 2 address here**" --mine --port 30304 --bootnodes "enode://**node 1 endode address here**" --ipcdisable --allow-insecure-unlock
 4. Once mining, the two terminal windows should look something like the following: ![alt text](mining-away.png)
 
+## Connecting to MyCrypto
+1. To connect your new blockchain to the MyCrypto wallet, you will open the app and select "Add Custom Node" from the network selection options. From there, you will fill out the prompt that looks as follows: ![alt text](network-setup.png)
+2. In said prompt, you will enter the node name, network name and chain ID as selected in the creation of the Genesis block. Select ETH as currency and enter the URL for the network.
 
-
+## Testing with a Transaction
+1. Using the keystore file created in the directory creation step, unlock the wallet for node 1 with "Keystore File" authentication
+2. Make a payment to the node 2 account via the public key generated in the directory creation step. ![alt text](sending-transaction.png)
+3. Verify the payment via "TX Status"
+4. A successful transaction should look similar to the following: ![alt text](transaction-TX.png)
 
